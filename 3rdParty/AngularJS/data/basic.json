@@ -1,0 +1,67 @@
+{
+    "stencil": {
+
+        "groups": {
+            "basic": { "index": 1, "label": "Basic shapes" }
+        },
+
+        "shapes": {
+            "basic": [
+                {
+                    "type": "basic.Rect",
+                    "size": { "width": 5, "height": 3 },
+                    "attrs": {
+                        "rect": { "rx": 2, "ry": 2, "width": 50, "height": 30, "fill": "#27AE60" },
+                        "text": { "text": "rect", "fill": "#ffffff", "font-size": 10, "stroke": "#000000", "stroke-width": 0 }
+                    }
+                },{
+                    "type": "basic.Circle",
+                    "size": { "width": 5, "height": 3 },
+                    "attrs": {
+                        "circle": { "width": 50, "height": 30, "fill": "#E74C3C" },
+                        "text": { "text": "ellipse", "fill": "#ffffff", "font-size": 10, "stroke": "#000000", "stroke-width": 0 }
+                    }
+                }, {
+                    "type": "devs.Atomic",
+                    "size": { "width": 4, "height": 3 },
+                    "inPorts": ["in1","in2"],
+                    "outPorts": ["out"],
+                    "attrs": {
+	                "rect": { "fill": "#8e44ad", "rx": 2, "ry": 2 },
+                        ".label": { "text": "model", "fill": "#ffffff", "font-size": 10, "stroke": "#000000", "stroke-width": 0 },
+	                ".inPorts circle": { "fill": "#f1c40f", "opacity": 0.9 },
+                        ".outPorts circle": { "fill": "#f1c40f", "opacity": 0.9 },
+	                ".inPorts text, .outPorts text": { "font-size": 9 }
+                    }
+                }
+            ]
+        },
+
+        "search": {
+            "*": ["attrs/text/text"]
+        }
+    },
+
+    "inspector": {
+
+        "inputs": {
+            "custom": {
+                "type": "text",
+                "group": "data",
+                "index": 1,
+                "label": "Custom data",
+                "attrs": {
+                    "label": {
+                        "data-tooltip": "An example of setting custom data via Inspector.",
+                        "data-tooltip-position": "right",
+                        "data-tooltip-position-selector": ".inspector"
+                    }
+                }
+            }
+        },
+
+        "groups": {
+            "data": { "label": "Data", "index": 1 }
+        }
+    }
+}

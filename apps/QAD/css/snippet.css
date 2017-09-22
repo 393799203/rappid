@@ -1,0 +1,48 @@
+/*! Rappid v2.1.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2017-09-21 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+.qad-content {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.qad-question-header {
+    text-align: center;
+    color: #4b4a67;
+}
+.qad-answer-header {
+    text-align: center;
+    color: #4b4a67;
+}
+.qad-options {
+    text-align: center;
+    margin: 10px;
+}
+.qad-option.qad-button {
+    border: 1px solid #6A6C8B;
+    color: #6A6C8B;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-right: 14px;
+    font-size: 10pt;
+    font-family: Helvetica Neue;
+    cursor: pointer;
+    outline: none;
+}
+.qad-button:hover {
+    background-color: #6A6C8B;
+    color: white;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <meta name="description" content="BPMN diagram builder powered by Rappid diagramming toolkit.">
+        <meta name="keywords" content="BPMN, modeling, jointjs, rappid, diagram, flowchart">
+        <meta name="author" content="client IO">
+        <meta property="og:title" content="BPMN 2.0 online builder" />
+        <meta property="og:description" content="BPMN diagram builder powered by Rappid diagramming toolkit." />
+        <meta property="og:site_name" content="JointJS | client IO" />
+        <meta property="og:image" content="http://jointjs.com/images/blog/bpmn-editor.png" />
+        <title>Business Process Model And Notation</title>
+        <link rel="stylesheet" type="text/css" href="../../build/rappid.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/bpmn.css" />
+    </head>
+    <body>
+        <div id="paper-container"></div>
+        <div id="toolbar-container">
+          <input id="fileName" type="text" value="bpmn-example"/>
+        </div>
+        <div id="stencil-container"></div>
+        <div id="inspector-container">
+          <div class="about">
+            <div class="logo"><img src="./images/logo-big.png" alt="JointJS"/></div>
+            <h1>Business Process Model and Notation</h1>
+            <h2>What is it good for?</h2>
+            <div class="about-bpmn">The main goal of the BPMN language is to erase the communication gap between the business process design and process implementation by providing a graphical notation that all the technical and business users can easily understand.</div>
+            <h2>BPMN 2.0</h2>
+            <div class="about-bpmn">From the version 2.0+ the language contains also the execution semantics for all BPMN elements and defines a mechanism for extending standard elements with custom attributes.</div>
+          </div>
+        </div>
+        <div id="statusbar-container">
+          <div class="status"></div>
+          <div class="copyright">Copyright © 2014 client IO. <a target="_blank" href="http://jointjs.com/about-rappid">License this technology</a></div>
+          <img src="./images/logo-small.png" alt="JointJS"/>
+        </div>
+
+        <script type="text/javascript" src="./src/gd.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
+
+        <!-- Dependencies: -->
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/lodash/index.js"></script>
+        <script src="../../node_modules/backbone/backbone.js"></script>
+
+        <script src="../../build/rappid.min.js"></script>
+
+        <script src="./src/inspector.js"></script>
+        <script src="./src/toolbar.js"></script>
+        <script src="./src/example.js"></script>
+        <script src="./src/bpmn.js"></script>
+    </body>
+</html>

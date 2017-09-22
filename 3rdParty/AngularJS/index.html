@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Angular Rappid</title>
+        <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="../../build/rappid.min.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/paper.css">
+        <link rel="stylesheet" href="css/inspector.css">
+        <link rel="stylesheet" href="css/stencil.css">
+        <link rel="stylesheet" href="css/halo.css">
+        <link rel="stylesheet" href="css/selection.css">
+        <link rel="stylesheet" href="css/toolbar.css">
+        <link rel="stylesheet" href="css/statusbar.css">
+        <link rel="stylesheet" href="css/freetransform.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+      <div ng-app="rappid-example">
+        <rappid title="Angular Rappid" source="data/basic.json">
+      </div>
+
+      <script src="lib/KeyboardJS/keyboard.js"></script>
+      <script src="lib/angular/angular.js"></script>
+
+      <!-- Dependencies: -->
+      <script src="../../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../../node_modules/lodash/index.js"></script>
+      <script src="../../node_modules/backbone/backbone.js"></script>
+
+      <script src="../../build/rappid.min.js"></script>
+
+      <script src="src/modules.js"></script>
+      <script src="src/directives.js"></script>
+      <script src="src/services.js"></script>
+
+      <script>
+        var app = angular.module('rappid-example', ['clientIO']);
+      </script>
+    </body>
+</html>

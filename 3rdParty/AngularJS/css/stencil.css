@@ -1,0 +1,94 @@
+/*! Rappid v2.1.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2017-09-21 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+.stencil-container {
+   border-top: 1px solid #4f4f4f;
+   border-right: 1px solid lightgray;
+   background-color: hsla(220,11%,97%,.95);
+   color: #bcbcbc;
+}
+.stencil-container > label {
+   display: block;
+   text-align: center;
+   background-color: #333;   
+   font-size: 10px;
+   line-height: 20px;
+   height: 20px;
+   text-shadow: 0 -1px 0 #000;
+}
+.stencil-container > .btn-expand,
+.stencil-container > .btn-collapse {
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   background: none;
+   border: none;
+   outline: none;
+   color: #bcbcbc;
+   cursor: pointer;
+   width: 20px;
+   height: 16px;
+   line-height: 16px;
+   margin: 0;
+   padding: 0;
+   border: 1px solid #4f4f4f;
+}
+.stencil-container > .btn-collapse {
+   left: 25px;
+}
+
+.joint-stencil {
+   top: 20px;
+   background: #333;
+}
+
+.joint-stencil > .content {
+   background: hsla(220,11%,97%,.95);
+}
+
+.joint-stencil .search {
+   background: transparent;
+}
+
+.joint-stencil .search:focus {
+    outline: none;
+}
+
+.joint-stencil.searchable > .content {
+   top: 30px;
+}
+
+.joint-stencil .group {
+   max-height: 700px;
+}
+
+.joint-stencil .group .joint-elements {
+   margin-left: -10px;
+   background: transparent;
+}
+
+/* Hide some nodes of elements in stencil. */
+.joint-stencil .joint-elements .joint-element.basic.Image text,
+.joint-stencil .joint-elements .joint-element.devs.Atomic .inPorts text,
+.joint-stencil .joint-elements .joint-element.devs.Atomic .outPorts text,
+.joint-stencil .joint-elements .joint-element.pn.Transition text {
+   display: none;
+}
+
+/* filter */
+.joint-stencil .joint-element.unmatched {
+    display: none;
+}
+.joint-stencil .group.unmatched {
+    display: none;
+}

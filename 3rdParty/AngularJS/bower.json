@@ -1,0 +1,25 @@
+{
+  "name": "ngRappid",
+  "version": "0.1.0",
+  "main": "index.html",
+  "homepage": "http://www.jointjs.com",
+  "authors": [
+    "clientIO"
+  ],
+  "description": "Rappid integration with AngularJS",
+  "keywords": [
+    "rappid",
+    "jointjs"
+  ],
+  "license": "http://jointjs.com/license/rappid_v2.txt",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "lib"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "fontawesome": "~4.2.0",
+    "KeyboardJS": "~0.4.2"
+  }
+}

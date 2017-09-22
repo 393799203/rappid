@@ -1,0 +1,32 @@
+/*! Rappid v2.1.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2017-09-21 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+.preview {
+    display: none;
+}
+.preview .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .5;
+}
+.preview .qad-content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    max-width: 400px;
+}

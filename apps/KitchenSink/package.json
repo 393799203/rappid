@@ -1,0 +1,15 @@
+{
+  "name": "rappid-kitchen-sink",
+  "version": "2.0.1",
+  "description": "The Kitchen Sink Application for Rappid",
+  "main": "index.html",
+  "scripts": {
+    "start": "node node_modules/live-server/live-server.js ../.. --open=apps/KitchenSink/ --cors"
+  },
+  "author": "client IO",
+  "license": "http://jointjs.com/license/rappid",
+  "private": true,
+  "devDependencies": {
+    "live-server": "1.1.0"
+  }
+}

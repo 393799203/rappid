@@ -1,0 +1,31 @@
+/*! Rappid v2.1.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2017-09-21 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+.statusbar-container {
+   background-color: hsla(220,11%,97%,.95);
+   border-top: 1px solid lightgray;
+}
+
+/* Validation message */
+
+.statusbar-container.error {
+   background-color: #e74c3c;
+   color: white;
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+   background-image: -webkit-linear-gradient(top,#e74c3c,#c0392b);
+   background-image: -moz-linear-gradient(top,#e74c3c,#c0392b);
+   border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+   font-size: 10px;
+   line-height: 20px;
+}
+

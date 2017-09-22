@@ -1,0 +1,38 @@
+<div class="rappid">
+  <h1>{{title}}</h1>
+  <div class="toolbar-container">
+    <button id="btn-undo" class="btn btn-info" data-tooltip="Undo" data-tooltip-position="top" ng-click="components.commander.undo()">
+      <i class="fa fa-rotate-left fa-lg"></i>
+    </button>
+    <button id="btn-redo" class="btn btn-info" data-tooltip="Redo" data-tooltip-position="top" ng-click="components.commander.redo()">
+      <i class="fa fa-rotate-right fa-lg"></i>
+    </button>
+    <button id="btn-clear" class="btn btn-info" data-tooltip="Clear Paper" data-tooltip-position="top" ng-click="components.graph.clear()">
+      <i class="fa fa-trash fa-lg"></i>
+    </button>
+    <button id="btn-svg" class="btn btn-info" data-tooltip="Open as SVG in a New Window" data-tooltip-position="top" ng-click="components.paper.openAsSVG({ preserveDimensions: true })">
+      <i class="fa fa-image fa-lg"></i>
+    </button>
+    <button id="btn-zoom-in" class="btn btn-info" data-tooltip="Zoom In" data-tooltip-position="top" ng-click="components.scroller.zoom(.2, { max: 2 })">
+      <i class="fa fa-search-plus fa-lg"></i>
+    </button>
+    <button id="btn-zoom-out" class="btn btn-info" data-tooltip="Zoom Out" data-tooltip-position="top" ng-click="components.scroller.zoom(-.2, { min: .2 })">
+      <i class="fa fa-search-minus fa-lg"></i>
+    </button>
+    <button id="btn-scale-to-fit" class="btn btn-info" data-tooltip="Zoom To Fit" data-tooltip-position="top" ng-click="components.scroller.zoomToFit({ padding: 20, scaleGrid: .2, minScale: .2, maxScale: 2 })">
+      <i class="fa fa-eye fa-lg"></i>
+    </button>
+  </div>
+  <div class="stencil-container">
+    <label>Stencil</label>
+    <button class="btn-expand" title="Expand all" ng-click="components.stencil.openGroups()">
+      <i class="fa fa-plus-circle"></i>
+    </button>
+    <button class="btn-collapse" title="Collapse all" ng-click="components.stencil.closeGroups()">
+      <i class="fa fa-minus-circle"></i>
+    </button>
+  </div>
+  <div class="paper-container"></div>
+  <div class="inspector-container"></div>
+  <div class="statusbar-container"></div>
+</div>

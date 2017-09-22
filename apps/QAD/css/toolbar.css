@@ -1,0 +1,55 @@
+/*! Rappid v2.1.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2017-09-21 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+#toolbar {
+    padding-top: 8px;
+    padding-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 7%, #e0e0e0 100%);
+    box-shadow: 0 2px 5px rgba(106, 108, 138, .49); /*#6a6c8a*/
+    border-top: 1px solid #DCDDEE;
+}
+#toolbar .btn {
+    border: 1px solid #6A6C8B;
+    color: #6A6C8B;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-right: 14px;
+    font-size: 10pt;
+    font-family: Helvetica Neue;
+    cursor: pointer;
+    outline: none;
+}
+#toolbar .btn:hover {
+    background-color: #6A6C8B;
+    color: white;
+}
+
+#toolbar .inp {
+    vertical-align: top;
+    border: 1px solid #6A6C8B;
+    color: #6A6C8B;
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-right: 14px;
+    font-size: 10pt;
+    font-family: Helvetica Neue;
+    line-height: 28px;
+    border-bottom-right-radius: 0;
+}
